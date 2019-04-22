@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Laboratories</title>
+    </head>
+    <body>
+        <h1>Hello {{ username }}</h1>
+        <p>Текущее время сервера {{ time }}</p>
+        <ol>
+            {% for item in week %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>

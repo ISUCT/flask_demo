@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+    {% block main %}
+        <h1>Книги</h1>
+        <a class="btn btn-danger" href="books/new">Добавить</a>
+        {% for book in books %}
+            <p>
+                <a href="{{ 'books/%s'% book.id }}">{{ book.name }}</a>
+            </p>
+        {% endfor %}
+    {% endblock %}
